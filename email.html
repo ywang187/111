@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>order email</title>
+    <style>
+        body {
+            background: #f3f3f3;
+        }
+
+        .order {
+            width: 900px;
+            height: auto;
+            margin: 50px auto auto auto;
+            background: white;
+            padding: 20px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .text {
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .orderInnfo {
+            width: 100%;
+            margin-top: 15px;
+            height: 100px;
+        }
+
+            .orderInnfo .title {
+                width: 25%;
+                font-size: 14px;
+                text-align: left;
+                float: left;
+                border-bottom: 1px solid #e3e3e3;
+            }
+
+        .productList {
+            width: 100%;
+            height: auto;
+        }
+
+            .productList .product {
+                width: 100%;
+                height: 150px;
+                margin-top: 15px;
+            }
+
+                .productList .product .img {
+                    width: 15%;
+                    float: left;
+                }
+
+                    .productList .product .img img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                .productList .product .proName {
+                    width: 68%;
+                    margin-left: 2%;
+                    float: left;
+                }
+
+                    .productList .product .proName span {
+                        font-size: 12px;
+                        color: #666;
+                    }
+
+                .productList .product .price {
+                    width: 15%;
+                    float: left;
+                    text-align:right;
+                }
+        .allPrice {
+            width: 100%;
+            height: 170px;
+            border-bottom: 1px solid #e3e3e3;
+        }
+        .allPrice table {
+            width: 100%;
+            border-bottom: 1px solid #e3e3e3;
+        }
+        .allPrice table tr {
+          height:50px;
+        }
+        .bottom {
+        width:100%;
+        }
+        @media only screen and (max-width: 1200px) {
+            .order {
+                width: 90vw;
+                margin-top: 5vw;
+                margin-left: 5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="order">
+        <div class="logo">
+            <img src="http://1juhao.oss-cn-shanghai.aliyuncs.com/637727609079314151_781a5206-39ad-4994-b0b7-5cd74da9be74.png" />
+        </div>
+        <div class="text">
+            <h2>Your order is confirmed!</h2>
+            <h4>Hello</h4>
+        </div>
+        <div class="orderInnfo">
+            <div class="title">
+                <div>Order date</div>
+                <div>
+                    <h4>17 11 2021</h4>
+                </div>
+            </div>
+            <div class="title">
+                <div>Order number</div>
+                <div>
+                    <h4>OD44434324</h4>
+                </div>
+            </div>
+            <div class="title">
+                <div>Payment method</div>
+                <div>
+                    <h4>Pay Pal</h4>
+                </div>
+            </div>
+            <div class="title">
+                <div>Shipping Address</div>
+                <div>
+                    <h4 style="color:forestgreen">New Delhi</h4>
+                </div>
+            </div>
+        </div>
+        <div class="productList">
+            <div class="product">
+                <div class="img">
+                    <img src="https://img1.longliqi.com/20210708104037.jpg" />
+                </div>
+                <div class="proName">
+                    <h4>Superbklean Magnetic Sanitary Napkin (Combo)</h4>
+
+                    <span>Qty:1pcs</span>
+                </div>
+                <div class="price">
+                    <h4>$11.11</h4>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img">
+                    <img src="https://img1.longliqi.com/20210708104151.jpg" />
+                </div>
+                <div class="proName">
+                    <h4>Superbklean Magnetic Sanitary Napkin (Combo)</h4>
+
+                    <span>Qty:1pcs</span>
+                </div>
+                <div class="price">
+                    <h4>$11.11</h4>
+                </div>
+            </div>
+        </div>
+        <div class="allPrice">
+            <div style="width:50%;float:right">
+                <table style="width:100%">
+                    <tr>
+                        <td style="text-align:left;width:50%;">
+                            Subtotal
+                        </td>
+                        <td style="text-align: right;width: 50%;">
+                            $120
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left;width:50%;">
+                            Shipping
+                        </td>
+                        <td style="text-align: right;width: 50%;">
+                            $0
+                        </td>
+                    </tr>
+                </table>
+                <table style="width:100%;border:none">
+                    <tr>
+                        <td style="text-align:left;width:50%;">
+                            <h4>Total</h4> 
+                        </td>
+                        <td style="text-align: right;width: 50%;">
+                            $120
+                        </td>
+                    </tr>
+                  
+                </table>
+            </div>
+        </div>
+        <div class="bottom">
+            <table style="width:100%;border:none">
+                <tr>
+                    <td style="text-align:left;width:50%;">
+                        <h4>Thanks for shopping</h4>
+                    </td>
+                    <td style="text-align: right;width: 50%;">
+                        <h4>Need Help?</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;width:50%;">
+                        Longrich Team
+                    </td>
+                    <td style="text-align: right;width: 50%;">
+                        12345678
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Check</title>
+    <meta content="Templines" name="author">
+    <meta content="LongRich" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/libs.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            background: white;
+        }
+
+        .width-10 {
+            width: 10%;
+        }
+
+        .width-15 {
+            width: 15%;
+        }
+
+        .width-20 {
+            width: 20%;
+        }
+
+        .width-30 {
+            width: 30%;
+        }
+
+        .width-40 {
+            width: 40%;
+          
+        }
+
+        .width-50 {
+            width: 50%;
+         
+        }
+
+        .width-60 {
+            width: 60%;
+        }
+        .left {
+            width: 46%;
+            float: left;
+            margin-right:4%;
+        }
+        .right {
+            width: 46%;
+            float: left;
+            margin-left: 4%;
+        }
+        .cartList {
+            width: 48%;
+            height: auto;
+            float: left;
+        }
+
+        .checkbox-form h3 {
+            border-bottom: 1px solid #eaedff;
+            font-size: 26px;
+            margin: 0 0 20px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        .country-select {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .cartTotals {
+            width: 48%;
+            margin-left: 4%;
+            height: auto;
+            float: left;
+        }
+        .warning {
+           border: 1px solid #EB5A31 !important;
+        }
+        .warningWord {
+            color: #EB5A31;
+            font-size:14px;
+        }
+    </style>
+</head>
+
+<body class="page-contacts">
+
+    <!-- Loader-->
+    <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+    <!-- Loader end-->
+
+
+    <div class="page-wrapper">
+        <header class="page-header page-header--static">
+            <div class="page-header__inner">
+                <div class="page-header__logo"><a class="logo" href="index.html"><img src="assets/img/longrichlogo1.png" alt="LongRich" style="width:255px;height:100px"></a></div>
+                <div class="page-header__menu">
+                    <nav class="page-nav" data-uk-navbar="">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="goodList.html">Shop</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="https://www.longliqicn.cn/login.html">BACK OFFICE</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="page-header__btn"> <a class="menu-btn" href="#offcanvas" data-uk-toggle> <img src="assets/img/icon_menu-btn.svg" alt="menu-btn"></a></div>
+            </div>
+        </header>
+        <main class="page-main">
+
+            <div class="section-about">
+                <div class="uk-section-large uk-container" style="width:80%;max-width:1400px;">
+                    <div class="cartList">
+                        <div class="checkbox-form">
+                            <h3>Billing Details</h3>
+                            <div class="row">
+                                <div class="left">
+                                    <div class="checkout-form-list">
+                                        <label>First Name <span class="required">*</span> <span class="warningWord firstName"></span></label>
+                                        <input type="text" placeholder="" id="firstName" />
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="checkout-form-list">
+                                        <label>Last Name <span class="required">*</span> <span class="warningWord lastName"></span></label>
+                                        <input type="text" placeholder="" id="lastName" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>Company Name</label>
+                                        <input type="text" placeholder="" id="companyName" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>Address <span class="required">*</span> <span class="warningWord streetAddress"></span></label>
+                                        <input type="text" placeholder="Street address" id="streetAddress" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <input type="text" placeholder="Apartment, suite, unit etc. " id="apartment" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>City<span class="required">*</span> <span class="warningWord city"></span></label>
+                                        <input type="text" placeholder="City" id="city" />
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="checkout-form-list">
+                                        <label>State <span class="required">*</span> <span class="warningWord state"></span></label>
+                                        <input type="text" placeholder="State" id="state" />
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="checkout-form-list">
+                                        <label>Zip Code <span class="required">*</span> <span class="warningWord zipCode"></span></label>
+                                        <input type="text" placeholder="Zip Code" id="zipCode" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>Phone <span class="required">*</span> <span class="warningWord phone"></span></label>
+                                        <input type="text" placeholder="" id="phone" />
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="checkout-form-list">
+                                        <label>Email Address <span class="required">*</span> <span class="warningWord email"></span></label>
+                                        <input type="email" placeholder="" id="email" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list create-acc">
+                                        <input id="cbox" type="checkbox" />
+                                        <label>Have a referral?</label>
+                                    </div>
+                                    <div id="cbox_info" class="checkout-form-list create-account">
+                                        <p>
+                                            Enter the referral number below
+                                        </p>
+                                        <label>Referral number<span class="required">*</span> <span class="warningWord referral"></span></label>
+                                        <input type="text" placeholder="referral number" id="referral" />
+                                        <p></p>
+                                        <label>Stockist code<span class="required">*</span> <span class="warningWord agent"></span></label>
+                                        <input type="text" placeholder="stockist code" id="agent" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="different-address">
+                                <div class="ship-different-title">
+                                    <h3>
+                                        <label>Ship to a different address?</label>
+                                        <input id="ship-box" type="checkbox" />
+                                    </h3>
+                                </div>
+                                <div id="ship-box-info">
+                                    <div class="row">
+
+                                        <div class="left">
+                                            <div class="checkout-form-list">
+                                                <label>First Name <span class="required">*</span><span class="warningWord firstName_dif"></span></label>
+                                                <input type="text" placeholder="" class="width-40" id="firstName_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="checkout-form-list">
+                                                <label>Last Name <span class="required">*</span><span class="warningWord lastName_dif"></span></label>
+                                                <input type="text" placeholder="" id="lastName_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Company Name</label>
+                                                <input type="text" placeholder="" id="companyName_dif" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Address <span class="required">*</span><span class="warningWord streetAddress_dif"></span></label>
+                                                <input type="text" placeholder="Street address" id="streetAddress_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <input type="text" placeholder="Apartment, suite, unit etc." id="apartment_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>City <span class="required">*</span><span class="warningWord city_dif"></span></label>
+                                                <input type="text" placeholder="City" id="city_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="left">
+                                            <div class="checkout-form-list">
+                                                <label>State<span class="required">*</span><span class="warningWord state_dif"></span></label>
+                                                <input type="text" placeholder="State" id="state_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="checkout-form-list">
+                                                <label>Zip Code <span class="required">*</span> <span class="warningWord zipCode_"></span></label>
+                                                <input type="text" placeholder="Zip Code" id="zipCode_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Phone <span class="required">*</span><span class="warningWord phone_dif"></span></label>
+                                                <input type="text" placeholder="" id="phone_dif" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="checkout-form-list">
+                                                <label>Email Address <span class="required">*</span><span class="warningWord email_dif"></span></label>
+                                                <input type="email" placeholder="" id="email_dif" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="order-notes">
+                                    <div class="checkout-form-list">
+                                        <label>Order Notes</label>
+                                        <textarea id="checkout-mess" class="note" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartTotals">
+                        <div class="your-order mb-30 ">
+                            <h3>Your order</h3>
+                            <div class="your-order-table table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="product-name">Product</th>
+                                            <th class="product-total">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="product">
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="cart-subtotal">
+                                            <th>Cart Subtotal</th>
+                                            <td><span class="amount" id="money"></span></td>
+                                        </tr>
+                                       
+                                        <tr class="order-total">
+                                            <th>Order Total</th>
+                                            <td>
+                                                <strong><span class="amount" id="allMooney"></span></strong>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+
+                            <div class="order-button-payment mt-20" style="width:100%">
+                                <a class="uk-button uk-button-danger uk-button-large" style="width:100%" id="check">check out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                <div data-uk-grid>
+                    <div class="uk-width-2-5@m">
+                        <div class="page-footer__logo"><a class="logo" href="01_home-cosmetic.html"><img src="http://1juhao.oss-cn-shanghai.aliyuncs.com/637706819200903128_d7f5823a-4541-4e83-b48b-1950e5486290.png" style="width:220px;height:55px" alt="LongRich"></a></div>
+                        <div class="page-footer__menus">
+                            <div class="uk-child-width-1-2" data-uk-grid>
+                                <div>
+                                    <div class="uk-h4">COMPANY</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="stockists.html"> STOCKISTS</a></li>
+                                        <li> <a href="terms.html"> TERMS & CONDITIONS</a></li>
+                                        <li> <a href="privacy.html"> PRIVACY POLICY</a></li>
+                                        <li> <a href="/contact.html"> FAQ</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">RESOURCES</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="javascript:void(0);">DOWNLOAD FORMS</a></li>
+                                        <li> <a href="javascript:void(0);">DIRECT DEPOSIT</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">CONNECT</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="javascript:void(0);">INSTAGRAM</a></li>
+                                        <li> <a href="javascript:void(0);">FACEBOOK</a></li>
+                                        <li> <a href="javascript:void(0);">YOUTUBE</a></li>
+
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">ABOUT US</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="about.html">OUR HISTORY</a></li>
+                                        <li> <a href="contact.html">CONTACT US</a></li>
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">CONTACT US</div>
+                                    <ul class="uk-nav">
+
+                                        <li>
+                                             <a href="javascript:void(0);">
+                                                LONGRICH AMERICA INT'L, INC.
+                                                17215 STUDEBAKER ROAD #290
+                                                CERRITOS, CA 90703
+                                            </a>
+                                        </li>
+                                        <li> <a href="javascript:void(0);">INFOUSA@LONGRICH.COM</a></li>
+                                        <li> <a href="javascript:void(0);"> +1 562-809-1688</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="offcanvas" data-uk-offcanvas="overlay: true; mode: slide; flip: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-flex-between">
+                    <button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+                    <div>
+                        <div class="uk-margin uk-margin-remove-top"><a class="logo" href="01_home-cosmetic.html"><img src="assets/img/longrichlogo1.png" alt="LongRich"></a></div>
+                    </div>
+                    <div>
+                        <div class="uk-margin">
+                            <ul class="uk-nav uk-nav-default">
+
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="goodList.html">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="http://www.longliqicn.cn">BACK OFFICE</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-block">
+                       
+                        <ul class="social">
+                            <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="http://www.vimeo.com" target="_blank"><i class="fab fa-vimeo-v"></i></a></li>
+                            <li><a href="http://www.google-plus.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-modal-full uk-modal" id="modal-search" data-uk-modal>
+                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport>
+                    <button class="uk-modal-close-full" type="button" data-uk-close></button>
+                    <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search" autofocus></form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery-2.1.0.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/check.js"></script>
+	
+	<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="POST" style="display:none;"  name="form_starPay"> <!-- // Live https://www.paypal.com/cgi-bin/webscr -->
+		<input type='hidden' name='cmd' value='_xclick'>
+		<input type='hidden' name='business' value='longrichamerica1@gmail.com'>
+		<input type='hidden' name='item_name' value='支付订单:'>
+		<input type='hidden' name='item_number' value=''>
+		<input type='hidden' name='amount' value=''>
+		<input type='hidden' name='currency_code' value='USD'>
+		<input type='hidden' name='return' value='http://shoplongrichamerica.com/orderDetail.html?ORDER_NO='>
+		<input type='hidden' name='notify_url' value='http://taiqu3.pawnsh.cn/?app_act=/ctrOrder/notify'>
+		<input type='hidden' name='cancel_return' value='http://shoplongrichamerica.com/'>
+		<input type='hidden' name='invoice' value=''>
+		<input type='hidden' name='charset' value='utf-8'>
+		<input type='hidden' name='no_shipping' value='1'>
+		<input type='hidden' name='no_note' value='1'>
+		<input type='hidden' name='rm' value='2'>
+		<input type="image" name="submit"   src="https://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" />
+	</form>
+	
+	
+
+
+</body>
+
+</html>

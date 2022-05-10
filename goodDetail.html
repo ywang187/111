@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Default</title>
+    <meta content="Templines" name="author">
+    <meta content="LongRich" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/libs.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="page-product">
+
+    <!-- Loader-->
+    <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+    <!-- Loader end-->
+
+
+    <div class="page-wrapper">
+        <header class="page-header page-header--static">
+            <div class="page-header__inner">
+                <div class="page-header__logo"><a class="logo" href="index.html"><img src="assets/img/longrichlogo1.png" alt="LongRich" style="width:255px;height:100px"></a></div>
+                <div class="page-header__menu">
+                    <nav class="page-nav" data-uk-navbar="">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="goodList.html">Shop</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="https://www.longliqicn.cn/login.html">BACK OFFICE</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="page-header__btn">
+                    <div class="page-header__btns-shop">
+
+                        <div class="uk-inline">
+                            <a class="uk-button-icon" href="#!" data-uk-icon="cart"></a>
+                            <div data-uk-drop="pos: bottom-right">
+                                <div class="uk-card uk-card-body uk-card-default uk-card-small">
+                                    <ul class="uk-list uk-list-divider" id="cart">
+                                    </ul>
+                                    <ul class="uk-list uk-list-divider">
+                                        <li>
+                                            <div class="uk-grid-small uk-flex-middle uk-flex-between" data-uk-grid>
+                                                <div> <span>Subtotal:</span></div>
+                                                <div> <span id="allmoney"></span></div>
+                                                <div class="uk-width-1-2"><a class="uk-button uk-button-default uk-button-small uk-width-1-1" href="cart.html">View cart </a></div>
+                                                <div class="uk-width-1-2"><a class="uk-button uk-button-danger uk-button-small uk-width-1-1" href="check.html">Checkout</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a class="menu-btn" href="#offcanvas" data-uk-toggle> <img src="assets/img/icon_menu-btn-dark.svg" alt="menu-btn"></a>
+                </div>
+            </div>
+        </header>
+        <main class="page-main">
+
+            <div class="section-product-info section-product-info--2">
+                <div class="uk-section uk-container">
+                    <div class="uk-grid uk-grid-collapse uk-child-width-1-2@l" data-uk-grid>
+                        <div>
+                            <div data-uk-slider>
+                                <div class="uk-position-relative" tabindex="-1">
+                                    <ul class="uk-slider-items uk-child-width-1-1 proImg">
+                                    </ul><a class="uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a><a class="uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="section-product-info__box">
+                                <div class="section-product-info__content" data-uk-scrollspy="target: &gt; *; cls: uk-animation-slide-bottom-small; delay: 500">
+                                    <div class="section-title section-product-info__title">
+                                        <!--<span>All-In-One Beauty pack</span>-->
+                                        <h3 class="productName"></h3>
+                                    </div>
+                                    <div class="section-product-info__intro">
+                                        <!--<p>Enim venia quis nostrud exrcit ulamco laboris com reprehen derit fugiat nula pariatur sint ipsum caecat. Lorem ipsum dolor am etur adipisicing elit sed tempor.</p>-->
+                                    </div>
+                                    <div class="section-product-info__price"> <sup>$</sup><span class="FP_PRICE"></span></div>
+                                    <div class="section-product-info__size">
+                                        <!--<ul>
+                                            <li><label><input type="radio" name="size"><span>75ml</span></label></li>
+                                            <li><label><input type="radio" name="size" checked><span>150ml</span></label></li>
+                                            <li><label><input type="radio" name="size"><span>200ml</span></label></li>
+                                        </ul>-->
+                                    </div>
+                                    <div class="section-product-info__btns">
+                                        <div class="jq-number input-col">
+                                            <div class="jq-number__spin minus"></div>
+                                            <div class="jq-number__field"><input class="input-col" type="number" value="1" min="1" id="quantity"></div>
+                                            <div class="jq-number__spin plus"></div>
+                                        </div><button class="uk-button uk-button-danger uk-button-large" type="button" id="addCart">Add to bag </button>
+                                    </div>
+                                    <!--<div class="section-product-info__category">Categories: Hair, Makeup, Skin Care</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-product-desc section-product-desc--2">
+                <div class="uk-section uk-container">
+                    <div class="section-product-desc__title section-product-desc__title_left">
+                        <ul class="uk-margin-medium-bottom" data-uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium; connect: .uk-switcher">
+                            <li>
+                                <a href="#">
+                                    <div class="uk-h3 ">Description</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="uk-h3">Reviews</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-product-desc__content">
+                        <ul class="uk-switcher">
+                            <li class="description">
+                               <p></p>
+                            </li>
+                            <li>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-new-arrivals">
+                <div class="uk-background-muted">
+                    <div class="uk-section-large uk-container">
+                        <div class="section-title" data-uk-scrollspy="target: &gt; *; cls: uk-animation-slide-bottom-small; delay: 500">
+                            <span>Best suiting & clothing</span>
+                            <h3>Related Products</h3>
+                        </div>
+                        <div class="section-content" data-uk-scrollspy="target: &gt; *; cls: uk-animation-slide-bottom-medium">
+                            <div class="slider-outline" data-uk-slider>
+                                <div class="uk-position-relative" tabindex="-1">
+                                    <ul class="uk-slider-items uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-3@l " id="recommend">
+                                    </ul>
+                                </div>
+                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                <div data-uk-grid>
+                    <div class="uk-width-2-5@m">
+                        <div class="page-footer__logo"><a class="logo" href="01_home-cosmetic.html"><img src="http://1juhao.oss-cn-shanghai.aliyuncs.com/637706819200903128_d7f5823a-4541-4e83-b48b-1950e5486290.png" style="width:220px;height:55px" alt="LongRich"></a></div>
+                        <div class="page-footer__menus">
+                            <div class="uk-child-width-1-2" data-uk-grid>
+                                <div>
+                                    <div class="uk-h4">COMPANY</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="stockists.html"> STOCKISTS</a></li>
+                                        <li> <a href="terms.html"> TERMS & CONDITIONS</a></li>
+                                        <li> <a href="privacy.html"> PRIVACY POLICY</a></li>
+                                        <li> <a href="/contact.html"> FAQ</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">RESOURCES</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="javascript:void(0);">DOWNLOAD FORMS</a></li>
+                                        <li> <a href="javascript:void(0);">DIRECT DEPOSIT</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">CONNECT</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="javascript:void(0);">INSTAGRAM</a></li>
+                                        <li> <a href="javascript:void(0);">FACEBOOK</a></li>
+                                        <li> <a href="javascript:void(0);">YOUTUBE</a></li>
+
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">ABOUT US</div>
+                                    <ul class="uk-nav">
+                                        <li> <a href="about.html">OUR HISTORY</a></li>
+                                        <li> <a href="contact.html">CONTACT US</a></li>
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="uk-h4">CONTACT US</div>
+                                    <ul class="uk-nav">
+
+                                        <li>
+                                             <a href="javascript:void(0);">
+                                                LONGRICH AMERICA INT'L, INC.
+                                                17215 STUDEBAKER ROAD #290
+                                                CERRITOS, CA 90703
+                                            </a>
+                                        </li>
+                                        <li> <a href="javascript:void(0);">INFOUSA@LONGRICH.COM</a></li>
+                                        <li> <a href="javascript:void(0);"> +1 562-809-1688</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="offcanvas" data-uk-offcanvas="overlay: true; mode: slide; flip: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-flex-between">
+                    <button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+                    <div>
+                        <div class="uk-margin uk-margin-remove-top"><a class="logo" href="01_home-cosmetic.html"><img src="assets/img/longrichlogo1.png" alt="LongRich"></a></div>
+                    </div>
+                    <div>
+                        <div class="uk-margin">
+                            <ul class="uk-nav uk-nav-default">
+
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="goodList.html">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="http://www.longliqicn.cn">BACK OFFICE</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-block">
+                       
+                        <ul class="social">
+                            <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="http://www.vimeo.com" target="_blank"><i class="fab fa-vimeo-v"></i></a></li>
+                            <li><a href="http://www.google-plus.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-modal-full uk-modal" id="modal-search" data-uk-modal>
+                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport>
+                    <button class="uk-modal-close-full" type="button" data-uk-close></button>
+                    <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search" autofocus></form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery-2.1.0.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/goodDetail.js?v=1.2"></script>
+    <script>
+       
+    </script>
+</body>
+
+</html>
